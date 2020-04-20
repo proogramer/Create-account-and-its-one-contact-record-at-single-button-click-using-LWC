@@ -1,0 +1,15 @@
+<template>
+    <h2>Account</h2>
+    <lightning-input type="text" label="Account Name" name="accountName"  onchange={handleChange}  required></lightning-input>
+    <lightning-input type="Number" label="Salary" name="salary" onchange={handleChange} required></lightning-input>
+
+    
+    <h2>Contact</h2>
+    <lightning-input type="text" label="First Name" name="cFirstName" onchange={handleChange}  required></lightning-input>
+    <lightning-input type="text" label="Last Name" name="cLastName" onchange={handleChange} required></lightning-input>
+    
+
+<div class="slds-p-vertical_small">
+    <lightning-button label="Submit" variant="brand" onclick={handleSubmit}></lightning-button>
+</div>
+</template>
